@@ -55,5 +55,17 @@ namespace Masivdinam
 
             return -1;
         }
+        public int FindLast(int key)
+        {
+            for (int i = size; i >= 0; i--)
+            {
+                if (items[i] == key)
+                {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
     }
 }
